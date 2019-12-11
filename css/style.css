@@ -9,6 +9,7 @@ body{
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
+    padding-bottom: 100px;
 }
 body.home{
     height: 100vh;
@@ -32,7 +33,12 @@ body.get-involved{
     background-blend-mode: luminosity;
     font-size: 1.125rem;
 }
-
+.row{
+  margin: 0px;
+}
+.container{
+  padding: 0px;
+}
 .bold{
     font-weight: 700;
 }
@@ -108,6 +114,9 @@ body.get-involved{
     height: 100vh;
     width: 100%;
     z-index: -1;
+}
+.mobile-navigation, .mobile-nav-inner, .mobile-timeline{
+  display: none;
 }
 .navigation{
     padding-top: 30px;
@@ -403,3 +412,148 @@ body.get-involved{
   .footer a {
     color: #fff !important;
   }
+/* MOBILE RESPONSIVE */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+html{
+    width: 100%;
+    min-height: 100vh;
+  }
+  body{
+    padding-bottom: 100px;
+  }
+  body.home{
+    min-height: 100vh;
+    height: auto;
+  }
+  .desktop{
+    display: none;
+  }
+  .title-main{
+    font-size: 1.5em;
+  }
+.content-row {
+    width: 90% !important;
+    margin-bottom: 25px !important;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 50px !important;
+}
+.home .content-row{
+  margin-top: 100px !important;
+}
+  .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navigation.desktop{
+    display: none;
+  }
+  .mobile-navigation{
+    display: inline-flex;
+    width: 100%;
+    margin: 0px !important;
+    padding-top: 20px;
+    position: relative;
+  }
+  .home .mobile-nav-inner{
+    background: #0f1319;
+  }
+  .mobile-nav-inner{
+    display: block;
+    width: 100%;
+    background: #131212;
+    margin-top: 20px;
+    padding: 20px;
+    display: none;
+  }
+  .mobile-nav-inner ul{
+    list-style: none;
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .mobile-nav-inner ul hr{
+    margin-top:5px;
+    margin-bottom: 5px;
+    background-color: #2b2b2b;
+  }
+  .mobile-nav-inner ul a{
+    color: white;
+  }
+  .menu{
+    margin-left: 20px;
+  }
+  .mobile-navigation .logo-div{
+   /* margin-left: -20px; */
+   height: 42px;
+  }
+  .btn-orange{
+    width: 120px;
+    height: 40px;
+    font-size: 0.9em;
+  }
+  .btn-outline{
+    width: 120px;
+    height: 40px;
+    font-size: 0.9em;
+  }
+  .timeline{
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .mobile-timeline{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .timeline-item{
+    background-image: url('../assets/img/orange-circle.svg');
+    background-position: top 12px left;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+  }
+  .timeline-title{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  .timeline-date{
+    color: #FE715C;
+    font-size: 0.8em;
+  }
+  .timeline-content{
+    
+  }
+  .faq-heading{
+    font-size: 1.2em;
+  }
+  .footer{
+    width: 100%;
+    padding: 10px !important;
+  }
+  .footer .desktop{
+    display: none !important;
+  }
+  .footer .container{
+    display: block;
+  }
+  .footer .col-sm-4{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+}

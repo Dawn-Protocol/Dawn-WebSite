@@ -30,4 +30,15 @@ $(document).ready(function(){
     //     var id = "#".concat($(this).attr('id').substr('4'));
     //     $(id).toggle();
     // });
+    $('.menu').click(function (){
+        $(".mobile-nav-inner").slideToggle('slow');
+        $(".mobile-nav-inner").addClass("show")
+    });
+    $(".content-row").click(function() {
+        if($(".mobile-nav-inner").hasClass("show")){
+            $(".mobile-nav-inner").slideUp('fast');
+            $(".mobile-nav-inner").removeClass("show")
+        }
+    })
   });
+
