@@ -254,9 +254,31 @@ body.get-involved{
 
 .title-main{
     font-size: 2.5em;
+    letter-spacing: 1px;
 }
 .title-secondary{
     font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.title-tertiary{
+  font-size: 1.2em;
+  font-weight: 500;
+  position: relative;
+}
+.title-tertiary:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -4px; 
+  left: 0;
+  right: 0;
+  width: 20px;
+  background: #FE715C;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 .title-landing{
     font-size: 3em;
